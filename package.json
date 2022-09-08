@@ -1,0 +1,32 @@
+{
+  "name": "revision",
+  "version": "1.0.0",
+  "description": "a node js tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palhg5848/revision-node-js.git"
+  },
+  "keywords": [
+    "code",
+    "step",
+    "by",
+    "step"
+  ],
+  "author": "DIL Zaib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/palhg5848/revision-node-js/issues"
+  },
+  "homepage": "https://github.com/palhg5848/revision-node-js#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
