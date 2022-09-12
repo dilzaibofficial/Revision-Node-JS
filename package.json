@@ -24,7 +24,8 @@
   "homepage": "https://github.com/palhg5848/revision-node-js#readme",
   "dependencies": {
     "chalk": "^5.0.1",
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
