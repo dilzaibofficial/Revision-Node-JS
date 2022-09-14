@@ -1,21 +1,27 @@
-const express = require('express')
+const { response } = require('express')
+const express=require('express')
+const path =require('path')
 
+
+const publicPath =path.join(__dirname,"public")
 const app=express()
 
-app.get('',(req,resp)=>{
-    resp.send('<h1>Welcome, This is Home Page.<h1>')
+app.set('view engine','ejs')
+
+app.get('',(_,resp)=>
+{
+    resp.sendFile(`${publicPath}/index.html`)
 })
 
-app.get('/about',(req,resp)=>{
-    resp.send('<h1>Welcome, This is About Page.<h1>')
+app.get('/profile',(_,resp)=>
+{
+    const user={
+        name:'DIL Zaib',
+        email:'dilzaib@gmail.com',
+        city:'Karachi'
+    }
+    resp.render('profile',{user})
 })
 
-app.get('/products',(req,resp)=>{
-    resp.send('<h1>Welcome, This is Products Page<h1>')
-})
-
-app.get('/help',(req,resp)=>{
-    resp.send('<h1>Welcome, This is Help Page<h1>')
-})
 
 app.listen(4500)
