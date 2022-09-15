@@ -23,5 +23,12 @@ app.get('/profile',(_,resp)=>
     resp.render('profile',{user})
 })
 
+app.get('/login',(_,resp)=>{
+    resp.render('login')
+})
+
+app.get("/header",(_,resp)=>{
+    resp.render('common/header')
+})
 
 app.listen(5000)
