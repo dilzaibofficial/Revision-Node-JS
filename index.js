@@ -9,7 +9,7 @@ app.set ('view engine','ejs')
 
 app.get('',(_,resp)=>
 {
-    resp.sendFile(`${publicPath}/index.html`)
+    resp.render('index')
 })
 
 app.get('/profile',(_,resp)=>
